@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import "./multimedia"
 func main ()  {
-	//img1 := multimedia.imagen{"imagen1","jpg","4"}
+
+	img1 := multimedia.Imagen{"imagen1","jpg","4"}
+	aud1 := multimedia.Audio{"Audio1","Mp3","10.5"}
+
+	img1.Mostrar()
+	aud1.Mostrar()
 }
