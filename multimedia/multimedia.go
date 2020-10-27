@@ -1,14 +1,16 @@
 package multimedia
 
+import "fmt"
+
 type imagen struct{
 	Titulo string
 	Formato string
 	Canales string
 }
 
-func (img *imagen) Mostrar() string {
+func (img *imagen) Mostrar() {
 	atributos := "Titulo: " + img.Titulo + "Formato: " + img.Formato + "Canales: " + img.Canales
-	return atributos
+	fmt.Println(atributos)
 }
 
 type audio struct{
@@ -17,9 +19,9 @@ type audio struct{
 	Duracion string
 }
 
-func (aud *audio) Mostrar() string {
+func (aud *audio) Mostrar() {
 	atributos := "Titulo: " + aud.Titulo + "Formato: " + aud.Formato + "Canales: " + aud.Duracion
-	return atributos
+	fmt.Println(atributos)
 }
 
 type video struct{
@@ -28,7 +30,7 @@ type video struct{
 	Frames string
 }	
 
-func (vid *video) Mostrar() string {
+func (vid *video) Mostrar() {
 	atributos := "Titulo: " + vid.Titulo + "Formato: " + vid.Formato + "Canales: " + vid.Frames
-	return atributos
+	fmt.Println(atributos)
 }
