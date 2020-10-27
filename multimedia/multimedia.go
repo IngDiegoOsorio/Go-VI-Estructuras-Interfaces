@@ -7,10 +7,10 @@ type Multimedia interface {
 }
 
 type ContenidoWeb struct{
-	multimedia [] Multimedia
+	Slicemultimedia [] Multimedia
 }
 
-type Imagen struct{
+type Imagen struct{	
 	Titulo string
 	Formato string
 	Canales string
