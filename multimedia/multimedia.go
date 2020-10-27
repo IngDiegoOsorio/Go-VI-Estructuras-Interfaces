@@ -2,39 +2,39 @@ package multimedia
 
 import "fmt"
 
-type multimedia interface {
+type Multimedia interface {
 	Mostrar()
 }
 
-type imagen struct{
+type Imagen struct{
 	Titulo string
 	Formato string
 	Canales string
 }
 
-func (img *imagen) Mostrar() {
+func (img *Imagen) Mostrar() {
 	atributos := "Titulo: " + img.Titulo + "Formato: " + img.Formato + "Canales: " + img.Canales
 	fmt.Println(atributos)
 }
 
-type audio struct{
+type Audio struct{
 	Titulo string
 	Formato string
 	Duracion string
 }
 
-func (aud *audio) Mostrar() {
+func (aud *Audio) Mostrar() {
 	atributos := "Titulo: " + aud.Titulo + "Formato: " + aud.Formato + "Canales: " + aud.Duracion
 	fmt.Println(atributos)
 }
 
-type video struct{
+type Video struct{
 	Titulo string
 	Formato string
 	Frames string
 }	
 
-func (vid *video) Mostrar() {
+func (vid *Video) Mostrar() {
 	atributos := "Titulo: " + vid.Titulo + "Formato: " + vid.Formato + "Canales: " + vid.Frames
 	fmt.Println(atributos)
 }
