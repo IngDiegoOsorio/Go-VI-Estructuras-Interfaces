@@ -2,6 +2,10 @@ package multimedia
 
 import "fmt"
 
+type multimedia interface {
+	Mostrar()
+}
+
 type imagen struct{
 	Titulo string
 	Formato string
